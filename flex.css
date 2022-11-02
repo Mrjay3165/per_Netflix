@@ -1,0 +1,466 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.sign-in {
+    background-image: url(./img/netflix\ homepage.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    width: 100%;
+    color: white;
+}
+
+.dark {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(360deg, rgba(0, 0, 0, .3), rgba(0, 0, 0, .5), rgba(0, 0, 0, .9));
+}
+form h1{
+    padding-left: 20px;
+}
+
+form h1{
+    padding-left: 20px;
+}
+
+
+.logo {
+    width: 200px;
+    margin: 30px 100px;
+}
+
+.box {
+    width: 35%;
+    border-radius: 5px;
+    margin: 30px auto;
+    padding: 3% 2%;
+    background: rgba(0, 0, 0, 0.8);
+}
+    
+
+
+.box input[type="text"],
+.box input[type="password"] {
+    background: rgb(40, 38, 38);
+    display: block;
+    margin: 20px auto;
+    border: none;
+    padding: 20px;
+    width: 90%;
+    font-size: 15px;
+    border-radius: 3px;
+    color: white;
+}
+
+.box input[type="text"]:focus,
+.box input[type="password"]:focus {
+    background-color: black;
+}
+
+.box input[type="text"]:hover,
+.box input[type="password"]:hover {
+    background: black;
+    transition: 0.3s;
+}
+
+.login {
+    text-decoration: none;
+    background-color: red;
+    display: block;
+    margin: 40px auto;
+    text-align: center;
+    padding: 20px;
+    outline: none;
+    color: white;
+    border-radius: 3px;
+    width: 90%;
+}
+
+.login:hover {
+    background: rgb(159, 0, 0);
+    transition: .3s;
+}
+
+.need {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+}
+
+.need:hover {
+    text-decoration: underline;
+    transition: 0.3s;
+}
+
+.reg {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.foot{
+    display: flex;
+    margin: 90px 0 0;
+    gap: 10px;
+    font-size: 20px;
+    align-items: center;
+}
+
+.foot a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.foot-lower{position: relative;
+    margin: 20px 0 50px;
+    font-size: 20px;
+    text-align: left;
+    padding-left: 20px;
+}
+
+form label {
+    padding-left: 2px;
+}
+
+.foot p{
+    padding: 20px;
+}
+
+form input[type="checkbox"]{
+    margin-left:20px;
+}
+
+.foot-lower a{
+    color: blue;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.learn:hover{
+    text-decoration: underline;
+    transition: .3s;
+}
+
+.contact-us {
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 30px 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+.contact {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.us {
+    display: flex;
+    flex-direction: column;
+}
+
+.us a {
+    color: rgb(156, 155, 155);
+    text-decoration: none;
+    padding: 10px ;
+    font-size: 20px;
+}
+
+.us a:hover {
+    text-decoration: underline;
+    transition: .3s;
+}
+
+
+
+
+
+@media screen and (max-width:850px) {
+
+    .logo {
+        margin: 20px;
+    }
+
+    .contact-us {
+       padding: 20px 50px;
+    }
+    .box{
+        width: 70%;
+    }
+}
+
+
+
+
+@media screen and (max-width:540px){
+
+    .logo {
+        margin: 10px;
+    }
+    
+    .contact-us {
+        padding: 20px 30px;
+    }
+
+    .box input[type="text"],
+    .box input[type="password"] {
+      margin: 20px auto;
+      padding: 20px;
+    }
+
+   .foot-lower {
+       font-size: 18px;
+   }
+
+   .us a {
+       padding: 5px;
+       font-size: 15px;
+   }
+}
+
+
+
+
+@media screen and (max-width:420px){
+
+    .logo {
+        margin: 0;
+        width: 180px;
+    }
+    
+    .contact-us {
+        padding: 20px;
+    }
+
+    .box{
+        padding: 20px;
+        width: 85%;
+    }
+    .box input[type="text"],
+    .box input[type="password"] {
+      margin: 18px auto;
+      padding: 18px;
+    }
+
+    .login {
+       padding: 18px;
+   }
+
+   .foot-lower {
+       font-size: 18px;
+   }
+
+   .us a {
+       padding: 5px;
+       font-size: 15px;
+   }
+}
+
+
+
+
+
+@media screen and (max-width:380px){
+   
+    .logo {
+        margin: 0;
+        width: 150px;
+    }
+
+    .contact-us {
+        padding: 10px;
+    }
+
+    .box{
+        padding: 16px;
+        width: 90%;
+    }
+    .box input[type="text"],
+    .box input[type="password"] {
+      padding: 15px;
+    }
+
+    .login {
+       padding: 15px;
+   }
+
+   .foot-lower {
+       font-size: 15px;
+   }
+
+   .us a {
+       padding: 5px;
+       font-size: 15px;
+   }
+
+   .need {
+       font-size: 15px;
+   }
+
+   .foot {
+       font-size: 15px;
+   }
+
+   .foot a {
+       font-size: 15px;
+   }
+}
+
+
+
+
+@media screen and (max-width:320px){
+    
+    .logo{
+        margin: 0;
+        width: 120px;
+    }
+
+    .contact-us {
+        padding: 10px;
+    }
+
+    .box{
+        padding: 16px;
+        width: 93%;
+    }
+    .box input[type="text"],
+    .box input[type="password"] {
+      padding: 10px;
+      
+    }
+
+    .login {
+       
+       padding: 10px;
+   }
+
+   .foot-lower {
+       
+       font-size: 15px;
+   }
+
+   .us a {
+       padding: 5px;
+       font-size: 15px;
+   }
+
+   .need {
+       font-size: 15px;
+   }
+
+   .foot {
+       font-size: 15px;
+   }
+
+   .foot a {
+       font-size: 15px;
+   }
+}
+
+
+
+@media screen and (max-width:280px){
+    
+    .logo{
+        width: 120px;
+    }
+
+    .contact-us {
+        padding: 8px;
+    }
+
+    .box{
+        padding: 10px 8px;
+    }
+    .box input[type="text"],
+    .box input[type="password"] {
+      padding: 10px;
+    }
+
+    .login {
+       padding: 12px;
+   }
+
+   .foot-lower {
+       font-size: 12px;
+   }
+
+   .us a {
+       padding: 5px;
+       font-size: 12px;
+   }
+
+   .need {
+       font-size: 12px;
+   }
+
+   .foot {
+       font-size: 12px;
+   }
+
+   .foot a {
+       font-size: 12px;
+   }
+}
+/* .section2{
+    margin: 200px auto;
+    background-color:blue;
+    height: 600px;
+    width: 100%;
+}
+.box1{
+    margin: auto;
+    width: 90%;
+    height: 400px;
+    background-color: rgb(49, 180, 9);
+}
+.box2{
+    margin: auto;
+    width: 60%;
+    height:300px;
+    background-color: rgb(95, 0, 48);
+}
+.box3{
+    margin: auto;
+    width: 40%;
+    height:300px;
+    background-color: rgb(11, 7, 61);
+    padding:20px 0;
+}
+.box3b{
+    margin: -120px auto 0;
+    height: 200px;
+    width:80%;
+    background-color: rgb(187, 139, 139);
+} */
+
+/* @media only screen and (max-width:760px){
+    .box3{
+        width: 70%;
+    }
+}
+
+
+@media only screen and (max-width:450px){
+    .box3{
+        width: 90%;
+    }
+}
+@media only screen and (max-width:350px){
+    .box3{
+        width: 40%;
+    }
+} */
